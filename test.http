@@ -1,0 +1,67 @@
+### POSTS
+
+###
+# Créer un post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "name": "Mon projet",
+  "description": "Projet initial"
+}
+
+###
+# Lister tous les posts
+GET http://localhost:3000/api/posts
+
+###
+# Récupérer un post par id (remplacer {id})
+GET http://localhost:3000/api/posts/{id}
+
+###
+# Mettre à jour un post (remplacer {id})
+PUT http://localhost:3000/api/posts/{id}
+Content-Type: application/json
+
+{
+  "status": "in-progress"
+}
+
+###
+# Supprimer un post (remplacer {id})
+DELETE http://localhost:3000/api/posts/{id}
+
+
+### USERS
+
+###
+# Créer un user
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "projectId": "{projectId}",
+  "title": "Ma première tâche",
+  "dueDate": "2024-12-31"
+}
+
+###
+# Lister tous les users
+GET http://localhost:3000/api/users
+
+###
+# Récupérer un user par id (remplacer {id})
+GET http://localhost:3000/api/users/{id}
+
+###
+# Mettre à jour un user (remplacer {id})
+PUT http://localhost:3000/api/users/{id}
+Content-Type: application/json
+
+{
+  "title": "Tâche mise à jour"
+}
+
+###
+# Supprimer un user (remplacer {id})
+DELETE http://localhost:3000/api/users/{id}
